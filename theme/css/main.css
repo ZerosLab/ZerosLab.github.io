@@ -5,6 +5,16 @@ body {
   color: #eca9cb;
 }
 
+div.asciiart{
+	
+	font-family: monospace;
+  font-size: 100%;
+  background-color: #000000;
+  color: #28a80c;
+	
+}
+
+
 a:link    { color: #6c71c4; text-decoration: none;      }
 a:hover   { color: #b739a4; text-decoration: underline; }
 a:visited { color: #5f63ac;                             }
