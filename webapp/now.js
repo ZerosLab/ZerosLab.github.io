@@ -107,11 +107,38 @@ for (let y in test[x]){
 		if (test[x][y].year != undefined && test[x][y].year != ""){
 		innertext += "<li>" + "Year: " + test[x][y].year + "</li>";
 		}
+		innertext += "<a href='https://www.bookfinder.com/search/?st=sr&ac=qr&mode=basic&author=" + test[x][y].author + "&title=" + test[x][y].title + "&isbn=&lang=en&destination=us&currency=USD&binding=*&keywords=&publisher=&min_year=&max_year=&minprice=&maxprice=&classic=off'> link </a>";
 		innertext += "</ul></b>";
         
 		  }
         }
-      
+ //     for (let y in test[x]){
+//		  if (test[x][y].year == ""){
+  //      innertext += "<li><b><i><u>❋";
+    //    innertext += test[x][y].title;
+      //  innertext += "❋</u><ul>";
+	//	if (test[x][y].author != undefined){
+//		innertext += "<li>" + "Author: " + test[x][y].author + "</li>";
+	//	}
+		//if (test[x][y].artist != undefined && test[x][y].artist != ""){
+//		innertext += "<li>" + "Artist: " + test[x][y].artist + "</li>";
+	//	}
+		//if (test[x][y].translator != undefined){
+//		innertext += "<li>" + "Translator: " + test[x][y].translator + "</li>";
+	//	}
+		//if (test[x][y].editor != undefined){
+//		innertext += "<li>" + "Editor: " + test[x][y].editor + "</li>";
+	//	}
+		//if (test[x][y].label != undefined){
+//		innertext += "<li>" + "Label: " + test[x][y].label + "</li>";
+	//	}
+		//if (test[x][y].year != undefined && test[x][y].year != ""){
+//		innertext += "<li>" + "Year: " + test[x][y].year + "</li>";
+	//	}
+		//innertext += "</ul></b.</b>";
+//        
+	//	  }
+      //  }
         }
     
 		 
