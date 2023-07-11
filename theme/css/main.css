@@ -5,6 +5,12 @@ body {
   color: #eca9cb;
 }
 
+.entry-content {
+	 font-size: 125%;
+}
+
+
+
 div.asciiart{
 	
 	font-family: monospace;
