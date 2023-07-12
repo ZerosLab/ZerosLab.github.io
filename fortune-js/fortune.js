@@ -1,4 +1,4 @@
-quotepath = "https://github.com/ZerosLab/transitionary/raw/main/friends.json";
+quotepath = "friends.json";
 
 elementid = "fortune";
 
