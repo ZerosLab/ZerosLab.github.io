@@ -1,14 +1,12 @@
 quotepath = "friends.json";
-console.log("ram");
+
 elementid = "fortune";
 
 
 $.getJSON(quotepath, function(test) {
+	console.log("ran");
 	num = test.length;
-	console.log(num);
 	rand = Math.floor(Math.random() * num);
-	console.log(rand);
 	fort = test[rand];
-	console.log(fort);
 	document.getElementById(elementid).innerHTML = fort;
 });
