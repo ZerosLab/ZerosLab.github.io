@@ -8,8 +8,8 @@ dat = (f.read())
 
 
 
-datb = "{" + dat.replace ('"', "") + "}"
-datp = datb.replace ("\n%\n", '"},{"')
+datb = "[" + dat.replace ('"', "") + "]"
+datp = datb.replace ("\n%\n", '", "')
 
 
 final = json.dumps(datp)
