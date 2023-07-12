@@ -1,5 +1,5 @@
 quotepath = "friends.json";
-
+console.log("ram");
 elementid = "fortune";
 
 
