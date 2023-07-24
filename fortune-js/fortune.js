@@ -1,6 +1,6 @@
 quotepath = "friends";
 elementid = "fortune";
-element = document.getElementById(elementid).innerHTML
+element = document.getElementById(elementid).innerHTML;
 
 $.getJSON(quotepath, function(test) {
     if(TypeOf test === 'array'){
