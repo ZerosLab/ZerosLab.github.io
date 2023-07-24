@@ -1,4 +1,4 @@
-quotepath = "friends.json";
+quotepath = "friends";
 elementid = "fortune";
 element = document.getElementById(elementid).innerHTML
 
