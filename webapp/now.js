@@ -64,6 +64,9 @@ $.getJSON('https://raw.githubusercontent.com/ZerosLab/transitionary/main/books.j
 		if (test[x][y].author != undefined){
 		innertext += "<li>" + "Author: " + test[x][y].author + "</li>";
 		}
+		if (test[x][y].cover != undefined){
+		innertext += "<li>" + "cover: <img src='" + test[x][y].author + "'></li>";
+		}
 		if (test[x][y].artist != undefined && test[x][y].artist != ""){
 		innertext += "<li>" + "Artist: " + test[x][y].artist + "</li>";
 		}
