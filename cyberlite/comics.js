@@ -14,8 +14,8 @@ else{
 		 document.getElementById("comic").innerHTML = "<img src='img/" + pg + ".png'>";
 $.getJSON('descs.json', function(hih) {  
 	console.log(hih);
-document.getElementById("desc").innerHTML = (hih[pg]);
-	console.log(hih[pg]);
+document.getElementById("desc").innerHTML = (hih.pg);
+	console.log(hih.pg);
 });
 					
 	};
