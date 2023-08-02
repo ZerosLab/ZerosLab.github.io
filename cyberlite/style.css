@@ -1,0 +1,32 @@
+.sidebar{
+position: absolute;
+left:0;
+top:0;
+height:100%;
+width:15%;
+background:#888888}
+
+.navbutton{
+
+
+}
+.desc{
+width:80%;
+background:#333333
+	border:2px solid #666666
+
+}
+
+.comic{
+width="90%";
+	border:2px solid #666666}
+
+.body{
+	background:#222222;
+	color:#bbbbbb;
+	width:50%;
+	border:2px solid #666666
+}
+
+.cbox{
+	border:2px solid #666666}
