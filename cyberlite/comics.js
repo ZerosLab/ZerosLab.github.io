@@ -8,14 +8,14 @@ function next(){
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const pg = urlParams.get('pg');
-window.location.href = ("https://zeroslab.github.io/cyberlite/?pg=" + (pg + 1));
+window.location.href = ("https://zeroslab.github.io/cyberlite/?pg=" + (parseInt(pg) + 1));
 	
 }
 function prev(){
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const pg = urlParams.get('pg');
-window.location.href = ("https://zeroslab.github.io/cyberlite/?pg=" + (pg - 1));
+window.location.href = ("https://zeroslab.github.io/cyberlite/?pg=" + (parseInt(pg) - 1));
 
 	
 }
