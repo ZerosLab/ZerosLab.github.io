@@ -24,4 +24,27 @@ document.getElementById("desc").innerHTML = (hih[pg]);
 	};
 
 
+function next(){
 
+window.location.href = ("https://zeroslab.github.io/cyberlite/?pg=" + (pg + 1));
+	
+}
+function prev(){
+
+window.location.href = "https://zeroslab.github.io/cyberlite/?pg=" + (pg - 1));
+
+	
+}
+function firs(){
+
+window.location.href = "https://zeroslab.github.io/cyberlite/?pg=1";
+
+
+	
+}
+function lat(){
+
+
+window.location.href = ("https://zeroslab.github.io/cyberlite/?pg=" + Object.values(hih)[Object.values(hih).length - 1]);
+	
+}
