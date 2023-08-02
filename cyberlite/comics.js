@@ -28,14 +28,14 @@ window.location.href = "https://zeroslab.github.io/cyberlite/?pg=1";
 
 	
 }
-function lat(){
+function lat(){$.getJSON('descs.json', function(hih) { 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const pg = urlParams.get('pg');
 
 window.location.href = ("https://zeroslab.github.io/cyberlite/?pg=" + Object.values(hih)[Object.values(hih).length - 1]);
 	
-}
+});}
 
 
 
