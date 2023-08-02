@@ -41,7 +41,7 @@ window.location.href = ("https://zeroslab.github.io/cyberlite/?pg=" + (Object.va
 
 if (pg == undefined){
 	$.getJSON('descs.json', function(hih) { 
-		window.location.replace("https://zeroslab.github.io/cyberlite/?pg=" + Object.values(hih)[Object.values(hih).length - 1]); 
+window.location.href = ("https://zeroslab.github.io/cyberlite/?pg=" + (Object.values(hih).length).toString());
 });
 		}
 else{
