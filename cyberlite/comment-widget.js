@@ -33,7 +33,7 @@ const s_maxLengthName = 16; // The max character length of a name
 const s_commentsOpen = true; // Change to false if you'd like to close your comment section site-wide (Turn it off on Google Forms too!)
 const s_collapsedReplies = true; // True for collapsed replies with a button, false for replies to display automatically
 const s_longTimestamp = false; // True for a date + time, false for just the date
-const s_includeUrlParameters = false; // Makes new comment sections on pages with URL parameters when set to true (If you don't know what this does, leave it disabled)
+const s_includeUrlParameters = true; // Makes new comment sections on pages with URL parameters when set to true (If you don't know what this does, leave it disabled)
 
 // Word filter - Censor profanity, etc
 const s_wordFilterOn = true; // True for on, false for off
