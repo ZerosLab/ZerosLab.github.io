@@ -4,6 +4,38 @@ const pg = urlParams.get('pg');
 console.log(pg);
 
 
+function next(){
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const pg = urlParams.get('pg');
+window.location.href = ("https://zeroslab.github.io/cyberlite/?pg=" + (pg + 1));
+	
+}
+function prev(){
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const pg = urlParams.get('pg');
+window.location.href = "https://zeroslab.github.io/cyberlite/?pg=" + (pg - 1));
+
+	
+}
+function firs(){
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const pg = urlParams.get('pg');
+window.location.href = "https://zeroslab.github.io/cyberlite/?pg=1";
+
+
+	
+}
+function lat(){
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const pg = urlParams.get('pg');
+
+window.location.href = ("https://zeroslab.github.io/cyberlite/?pg=" + Object.values(hih)[Object.values(hih).length - 1]);
+	
+}
 
 
 
