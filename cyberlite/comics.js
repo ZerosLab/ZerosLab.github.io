@@ -8,7 +8,9 @@ console.log(pg);
 
 
 if (pg == undefined){
-console.log(pg)
+	$.getJSON('descs.json', function(hih) { 
+		window.location.replace("https://zeroslab.github.io/cyberlite/?pg=" + Object.values(hih)[Object.values(hih).length - 1]); 
+});
 		}
 else{
 		 document.getElementById("comic").innerHTML = "<img src='img/" + pg + ".png'>";
