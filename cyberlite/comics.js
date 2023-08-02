@@ -16,6 +16,7 @@ $.getJSON('descs.json', function(hih) {
 	console.log("ok");
 document.getElementById("desc").innerHTML = (hih.pg);
 	console.log(hih.pg);
+	console.log(hih[pg]);
 });
 					
 	};
