@@ -52,5 +52,5 @@ else{
 		console.log(hih.pg);
 		console.log(hih[pg]);					
 	};
-};);
+});
 
