@@ -47,13 +47,10 @@ else if (pg > (Object.values(hih).length)){
 }
 else{
 	document.getElementById("comic").innerHTML = "<img src='img/" + pg + ".png'>";
-	$.getJSON('descs.json', function(hih) {  
 		console.log("ok");
 		document.getElementById("desc").innerHTML = (hih[pg]);
 		console.log(hih.pg);
-		console.log(hih[pg]);
-});
-					
+		console.log(hih[pg]);					
 	};
 };);
 
