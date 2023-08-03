@@ -8,14 +8,14 @@ function next(){
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const pg = urlParams.get('pg');
-window.location.href = ("https://zeroslab.github.io/cyberlite/?pg=" + (parseInt(pg) + 1));
+window.location.href = ("https://zeroslab.github.io/cyberlyte/?pg=" + (parseInt(pg) + 1));
 	
 }
 function prev(){
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const pg = urlParams.get('pg');
-window.location.href = ("https://zeroslab.github.io/cyberlite/?pg=" + (parseInt(pg) - 1));
+window.location.href = ("https://zeroslab.github.io/cyberlyte/?pg=" + (parseInt(pg) - 1));
 
 	
 }
@@ -23,7 +23,7 @@ function firs(){
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const pg = urlParams.get('pg');
-window.location.href = "https://zeroslab.github.io/cyberlite/?pg=1";
+window.location.href = "https://zeroslab.github.io/cyberlyte/?pg=1";
 
 
 	
@@ -33,14 +33,14 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const pg = urlParams.get('pg');
 
-window.location.href = ("https://zeroslab.github.io/cyberlite/?pg=" + (Object.values(hih).length).toString());
+window.location.href = ("https://zeroslab.github.io/cyberlyte/?pg=" + (Object.values(hih).length).toString());
 	
 });}
 	$.getJSON('descs.json', function(hih) { 
 if (pg == undefined){
 	firs();}
 else if (pg <= 0){
-	window.location.href = "https://zeroslab.github.io/cyberlite/?pg=1";
+	window.location.href = "https://zeroslab.github.io/cyberlyte/?pg=1";
 }
 else if (pg > (Object.values(hih).length)){
 	lat();
