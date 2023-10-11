@@ -45,10 +45,10 @@
 $.getJSON('https://raw.githubusercontent.com/ZerosLab/transitionary/main/books.json', function(test) {
     // JSON result in `data` variable
     start={0:{'unlocktime': 0},1:{'unlocktime': 0},2:{'unlocktime': 0}};
-    //console.log("okay");
+    console.log("okay");
     
     
-    //console.log(test);
+    console.log(test);
     
      achieves={};
  
