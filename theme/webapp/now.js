@@ -148,7 +148,7 @@ for (let y in test[x]){
     
     
    
-    
+    console.log(innertext);
 document.getElementById("testing").innerHTML = (innertext);
 
 
