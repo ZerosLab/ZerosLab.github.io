@@ -46,47 +46,50 @@ $.getJSON('https://raw.githubusercontent.com/ZerosLab/transitionary/main/books.j
     // JSON result in `data` variable
     start={0:{'unlocktime': 0},1:{'unlocktime': 0},2:{'unlocktime': 0}};
     console.log("okay");
-    
+    i=1;
     
     console.log(test);
-    
+    innertext="";
      achieves={};
  
-     innertext="<ul><li'>";
     for (let x in test){
-      innertext += ("<u><b>☆"+x + "☆</b></u><br><ul>");
+      innertext += ("<u><b>☆"+x + "☆</b></u><br>");
       
+     innertext+="<div style='display:flex'>";
       for (let y in test[x]){
 		  if (test[x][y].shelf == "true"){
-        innertext += "<li><u>";
+        innertext += "<div style='text-align:center;border:1px solid black;width:250px'>";
         innertext += test[x][y].title;
-        innertext += "</u><ul>";
 		if (test[x][y].author != undefined){
-		innertext += "<li>" + "Author: " + test[x][y].author + "</li>";
+		innertext += "Author: " + test[x][y].author;
 		}
 		if (test[x][y].cover != undefined){
-		innertext += "<li>" + "cover: <img width=100px src='" + test[x][y].cover + "'></li>";
+		innertext += "<br>cover: <img width=100px src='" + test[x][y].cover + "'>";
 		}
 		if (test[x][y].artist != undefined && test[x][y].artist != ""){
-		innertext += "<li>" + "Artist: " + test[x][y].artist + "</li>";
+		innertext += "<br>Artist: " + test[x][y].artist;
 		}
 		if (test[x][y].translator != undefined){
-		innertext += "<li>" + "Translator: " + test[x][y].translator + "</li>";
+		innertext += "<br>Translator: " + test[x][y].translator;
 		}
 		if (test[x][y].editor != undefined){
-		innertext += "<li>" + "Editor: " + test[x][y].editor + "</li>";
+		innertext += "<br>Editor: " + test[x][y].editor;
 		}
 		if (test[x][y].label != undefined){
-		innertext += "<li>" + "Label: " + test[x][y].label + "</li>";
+		innertext += "<br>Label: " + test[x][y].label;
 		}
 		if (test[x][y].year != undefined && test[x][y].year != ""){
-		innertext += "<li>" + "Year: " + test[x][y].year + "</li>";
+		innertext += "<br>Year: " + test[x][y].year;
 		}
 		innertext += "</ul>";
         
+		if (i%5==0){
+innertext +="</div><div style='display:flex'>";
+		}
+		i += 1;
 		  }
         }
-           innertext += "<br><br></ul>";
+           innertext += "</div>";
 for (let y in test[x]){
 		  if (test[x][y].shelf == "false"){
         innertext += "<li><b><u>";
