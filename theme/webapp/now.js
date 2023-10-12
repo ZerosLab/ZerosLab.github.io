@@ -81,7 +81,7 @@ $.getJSON('https://raw.githubusercontent.com/ZerosLab/transitionary/main/books.j
 		if (test[x][y].year != undefined && test[x][y].year != ""){
 		innertext += "<br>Year: " + test[x][y].year;
 		}
-		innertext += "</ul>";
+		innertext += "</div>";
         
 		if (i%5==0){
 innertext +="</div><div style='display:flex'>";
