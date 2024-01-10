@@ -8,13 +8,18 @@ const game = urlParams.get('game');
 const type = urlParams.get('type');
 const level = urlParams.get('level');
 i = 0;
+fullDexURL = "JSONDEX_" + game + "_" + type + "_" + level
+
+$.getJSON(fullDexURL, function(fullData)){
+  Data = fullData
+}
 $.getJSON(dexJSONURL, function(dex)){
 
 
-  for element in game.json{
+  for element in Data{
     i+=1;
     newtable += "<td";
-    if element.name in dexJSON:
+    if element.name in dex:
       newtable +=' style="background-color:yellow"> ';
     else:
       newtable +=">";
