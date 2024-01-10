@@ -10,9 +10,8 @@ const level = urlParams.get('level');
 i = 0;
 fullDexURL = "JSONDEX_" + game + "_" + type + "_" + level + ".json"
 
-$.getJSON(fullDexURL, function(fullData)){
-  Data = fullData
-}
+$.getJSON(fullDexURL, function(Data)){;
+
 console.log(Data);
 $.getJSON(dexJSONURL, function(dex)){
   console.log(dex);
@@ -30,7 +29,7 @@ $.getJSON(dexJSONURL, function(dex)){
     if i%30 = 0:
       newtable += "<tr><tr><td colspan=6> " + i.toString + "-" + (i+30).tostring + "</tr><tr>"
 document.getElementById("p1").innerHTML = newtable;
-  }
+  }}
 
 
 
