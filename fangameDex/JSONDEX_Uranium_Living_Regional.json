@@ -2,11 +2,11 @@
    "001":{
       "Name":"Orchynx",
       "Type":{
-         "Primary":"Grass"
+         "Primary":"Grass",
          "Secondary":"Steel"
       },
       "Evolutions":{
-         1:"002 - Metalynx"
+         "1":"002 - Metalynx"
       },
       "Preevoluitons":{
          
@@ -16,14 +16,14 @@
    "002":{
       "Name":"Metalynx",
       "Type":{
-         "Primary":"Grass"
+         "Primary":"Grass",
          "Secondary":"Steel"
       },
       "Evolutions":{
          
       },
       "Preevoluitons":{
-         1:"001 - Orchynx"
+         "1":"001 - Orchynx"
       },
       "Obtaining":"Evolve Orchynx"
    },
@@ -2570,7 +2570,7 @@
    "198":{
       "Name":"Aotius",
       "Type":{
-         "Primary":"Flying";
+         "Primary":"Flying",
          "Secondary":"Fire"
       },
       "Evolutions":{
@@ -2584,7 +2584,7 @@
    "199":{
       "Name":"Mutios",
       "Type":{
-         "Primary":"Ghost";
+         "Primary":"Ghost",
          "Secondary":"Water"
       },
       "Evolutions":{
@@ -2598,7 +2598,7 @@
    "200":{
       "Name":"Zephy",
       "Type":{
-         "Primary":"Electric";
+         "Primary":"Electric",
          "Secondary":"Ice"
       },
       "Evolutions":{
