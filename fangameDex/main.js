@@ -13,8 +13,9 @@ fullDexURL = "JSONDEX_" + game + "_" + type + "_" + level + ".json"
 $.getJSON(fullDexURL, function(fullData)){
   Data = fullData
 }
+console.log(Data);
 $.getJSON(dexJSONURL, function(dex)){
-
+  console.log(dex);
 
   for element in Data{
     i+=1;
@@ -28,11 +29,8 @@ $.getJSON(dexJSONURL, function(dex)){
       newtable+="</tr><tr>"
     if i%30 = 0:
       newtable += "<tr><tr><td colspan=6> " + i.toString + "-" + (i+30).tostring + "</tr><tr>"
+document.getElementById("p1").innerHTML = newtable;
   }
 
 
 
-
-
-
-document.getElementById("p1").innerHTML = newtable;
