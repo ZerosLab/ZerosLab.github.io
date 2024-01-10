@@ -2582,9 +2582,10 @@
       "Obtaining":"Currently unreleased"
    },
    "199":{
-      "Name":"",
+      "Name":"Mutios",
       "Type":{
-         
+         "Primary":"Ghost";
+         "Secondary":"Water"
       },
       "Evolutions":{
          
@@ -2592,12 +2593,13 @@
       "Preevoluitons":{
          
       },
-      "Obtaining":""
+      "Obtaining":"Currently unreleased."
    },
    "200":{
-      "Name":"",
+      "Name":"Zephy",
       "Type":{
-         
+         "Primary":"Electric";
+         "Secondary":"Ice"
       },
       "Evolutions":{
          
@@ -2605,6 +2607,6 @@
       "Preevoluitons":{
          
       },
-      "Obtaining":""
+      "Obtaining":"Currently unreleased."
    }
 }
