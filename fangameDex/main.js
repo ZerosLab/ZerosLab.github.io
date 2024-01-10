@@ -10,7 +10,7 @@ const level = urlParams.get('level');
 i = 0;
 fullDexURL = "JSONDEX_" + game + "_" + type + "_" + level + ".json"
 
-$.getJSON(fullDexURL, function(Data)){;
+$.getJSON(fullDexURL, function(Data)){
 
 console.log(Data);
 $.getJSON(dexJSONURL, function(dex)){
