@@ -6,6 +6,8 @@ function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
 }
 
+}
+const rgb2hex = (rgb) => `#${rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/).slice(1).map(n => parseInt(n, 10).toString(16).padStart(2, '0')).join('')}`
 function toHex(num) {
 		x=(num >>> 0).toString(16);
     if (x.length == 1){
@@ -36,8 +38,6 @@ function get3Distance(target,guess){
   xyHyp=Math.sqrt((xDist**2)+(yDist**2));
   totalDist=Math.sqrt((xyHyp**2)+(zDist**2));
   return ([totalDist, xDist, yDist, zDist]);
-}
-const rgb2hex = (rgb) => `#${rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/).slice(1).map(n => parseInt(n, 10).toString(16).padStart(2, '0')).join('')}`
 
 function testColor(form){
 	var guess = form.inputbox.value;
