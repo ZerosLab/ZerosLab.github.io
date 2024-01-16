@@ -36,7 +36,7 @@ function get3Distance(target,guess){
   zDist=Math.abs(targetZ-guessZ);
   xyHyp=Math.sqrt((xDist**2)+(yDist**2));
   totalDist=Math.sqrt((xyHyp**2)+(zDist**2));
-  return ([totalDist, xDist, yDist, zDist]);
+  return ([totalDist, xDist, yDist, zDist]);}
 
 function testColor(form){
 	var guess = form.inputbox.value;
