@@ -17,11 +17,15 @@ Welcome! This is an experimental tool to attempt to train me (and maybe you!) to
 
 <form name="myForm" action="" method="GET">
   Enter something in the box: <br>
-  <input type="text" name="inputbox" value="">
+  <label>Red
+  <input type="range" min="0" max="3" name="Red" value=""></label>
+  <label>Green
+  <input type="range" min="0" max="3" name="Green" value=""></label>
+  <label>Blue
+  <input type="range" min="0" max="3" name="Blue" value=""></label>
   <input type="button" name="button" value="Submit" onClick="testColor(this.form)">
   <input type="button" name="button" value="Randomize" onClick="randomColor()">
 </form>
 <p id="test">
 </p>
-  <script src=colorguess25.js></script>
 </body>
