@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+  <style>
+.square {
+  height: 500px;
+  width: 500px;
+}</style>
+</head>
+<body>
+Welcome! This is an experimental tool to attempt to train me (and maybe you!) to identify the hex codes of colors by sight. Heres how it works: the square below is black right now, but when you hit the start button it will change to a random color somewhere in hex color space. Enter the hex code in the text box below, and then just submit. Depending on how good you did, youll get a different response - im modeling closeness by concieving of the color space as a third-dimensional space and getting the distance between the coordinates given and the target. <br>
+
+<center>
+<div class="square" id=square style="background-color: #000000;"></div>
+<div id="msg"></div> 
+</center>
+
+
+<form name="myForm" action="" method="GET">
+  Enter something in the box: <br>
+  <input type="text" name="inputbox" value="">
+  <input type="button" name="button" value="Submit" onClick="testColor(this.form)">
+  <input type="button" name="button" value="Randomize" onClick="randomColor()">
+</form>
+<p id="test">
+</p>
+  <script src=colorguess20.js></script>
+</body>
