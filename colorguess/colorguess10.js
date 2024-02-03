@@ -1,7 +1,7 @@
 square=document.getElementById("square").style
 msg = document.getElementById("msg")
-var multiply = 64;
-var max = 4;
+var multiply = 25.5;
+var max = 10;
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
