@@ -15,10 +15,11 @@ function toHex(num) {
     return x;
 }
 function randomColor(){
-red = getRandomIntInclusive(0,3)*64;
-green = getRandomIntInclusive(0,3)*64;
-blue = getRandomIntInclusive(0,3)*64;
-square.backgroundColor="#" + toHex(red) + toHex(green) + toHex(blue)
+red = getRandomIntInclusive(0,4)*64;
+green = getRandomIntInclusive(0,4)*64;
+blue = getRandomIntInclusive(0,4)*64;
+square.backgroundColor="rgb(" + red + ", " + green + ", " + blue +")"
+console.log(square.backgroundColor);
 msg.innerHTML = ""
 }
 
@@ -39,7 +40,7 @@ function get3Distance(target,guess){
   return ([totalDist, xDist, yDist, zDist]);}
 
 function testColor(form){
-  var guess="#"+String(toHex(form.Red.value*64)).padStart(2, '0')+String(toHex(form.Green.value*64)).padStart(2, '0')+String(toHex(form.Blue.value*64)).padStart(2, '0');
+  var guess="#"+String(toHex(form.Red.value*128)).padStart(2, '0')+String(toHex(form.Green.value*128)).padStart(2, '0')+String(toHex(form.Blue.value*128)).padStart(2, '0');
 	console.log(guess);
 	distance = get3Distance(rgb2hex(square.backgroundColor),guess.toString())
   console.log(distance);
